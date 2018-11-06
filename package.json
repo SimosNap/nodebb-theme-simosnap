@@ -1,0 +1,10 @@
+{
+  "name": "nodebb-theme-SimosNap",
+  "version": "0.0.1",
+  "description": "SimosNap IRC Network",
+  "main": "theme.less",
+  "keywords": [
+
+  ],
+  "license": "MIT"
+}
