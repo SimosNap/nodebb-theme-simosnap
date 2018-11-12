@@ -25,6 +25,11 @@
 </head>
 
 <body class="{bodyClass} skin-{config.bootswatchSkin}">
+    <div id="sn_header">
+        <div id="full_ads">
+            ASD
+        </div>
+    </div>
 	<nav id="menu" class="slideout-menu hidden">
 		<!-- IMPORT partials/slideout-menu.tpl -->
 	</nav>
