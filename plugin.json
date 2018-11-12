@@ -3,12 +3,12 @@
 	"library": "./lib/theme.js",
 	"hooks": [
 		{
-			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
+			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas",
+			 "hook": "filter:meta.getLinkTags", "method": "getLinkTags"
 		}
 	],
 	"scripts": [
 		"lib/client.js",
-		"../nodebb-theme-persona/lib/persona.js",
 		"../nodebb-theme-persona/lib/modules/nprogress.js",
 		"../nodebb-theme-persona/lib/modules/autohidingnavbar.min.js",
 		"../nodebb-theme-persona/lib/modules/quickreply.js"
