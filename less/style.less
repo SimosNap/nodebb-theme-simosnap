@@ -19,6 +19,7 @@ div#ads_full { clear:both; margin:0 auto; text-align:center; }
 
 .navbar .container { width:1280px; margin: 0 auto; padding:0px;}
 
+
 @media (max-width: @screen-xs-max) {
 	.slideout-panel {
 		min-height: 100vh;
@@ -254,6 +255,21 @@ a.permalink {
 	pointer-events: none;
 }
 
+div#sn_footer {
+	box-sizing: border-box;
+    font-size:x-small;
+    color:#FCFCFC;
+    padding:10px 5px 10px 5px;
+    margin:0px auto 0px auto;
+    width:1280px;
+    background:rgba(187, 192, 230, 0.65);
+}
+
+div#sn_footer a, div#sn_footer a:visited { color:#FCFCFC; font-size:12px; font-weight:bold; text-decoration:none; }
+div#sn_footer a:hover, div#sn_footer a:active { color:#FFFFFF; text-decoration:underline; }
+div#sn_footer table { width: 100%; }
+div#sn_footer table tr td { width:33%; }
+
 @media (max-width: @screen-sm-max) {
 	.form-control {
 		font-size: 16px;
@@ -264,7 +280,7 @@ a.permalink {
 
 @media screen and (max-width: 1340px) {
 
-div#sn_header { width:1000px; }
+div#sn_header, div#sn_footer { width:1000px; }
 
 .navbar, .navbar .container { width:1000px;}
 
@@ -274,7 +290,7 @@ div#sn_header { width:1000px; }
 
 @media screen and (max-width: 1000px) {
 
-div#sn_header {width: 100%;}
+div#sn_header, div#sn_footer {width: 100%;}
 
 .navbar, .navbar .container { width:100%;}
 

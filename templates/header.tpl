@@ -27,14 +27,63 @@
 <body class="{bodyClass} skin-{config.bootswatchSkin}">
     <div id="sn_header">
         <div id="full_ads">
-            ASD
+    		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    		<!-- SimosNap Header Responsive -->
+    		<ins class="adsbygoogle"
+    		     style="display:block"
+    		     data-ad-client="ca-pub-0565181608763167"
+    		     data-ad-slot="7023610252"
+    		     data-ad-format="auto"></ins>
+    		<script>
+    		(adsbygoogle = window.adsbygoogle || []).push({});
+    		</script>
         </div>
     </div>
 	<nav id="menu" class="slideout-menu hidden">
-		<!-- IMPORT partials/slideout-menu.tpl -->
+		<div class="menu-profile">
+			<!-- IF user.uid -->
+			<!-- IF user.picture -->
+			<img src="{user.picture}"/>
+			<!-- ELSE -->
+			<div class="user-icon" style="background-color: {user.icon:bgColor};">{user.icon:text}</div>
+			<!-- ENDIF user.picture -->
+			<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i>
+			<!-- ENDIF user.uid -->
+		</div>
+
+		<section class="menu-section" data-section="navigation">
+			<h3 class="menu-section-title">[[global:header.navigation]]</h3>
+			<ul class="menu-section-list"></ul>
+		</section>
+
+		<!-- IF config.loggedIn -->
+		<section class="menu-section" data-section="profile">
+			<h3 class="menu-section-title">[[global:header.profile]]</h3>
+			<ul class="menu-section-list" component="header/usercontrol"></ul>
+		</section>
+
+		<section class="menu-section" data-section="notifications">
+			<h3 class="menu-section-title">
+				[[global:header.notifications]]
+				<span class="counter unread-count" component="notifications/icon" data-content="{unreadCount.notification}"></span>
+			</h3>
+			<ul class="menu-section-list notification-list-mobile" component="notifications/list"></ul>
+			<p class="menu-section-list"><a href="{relative_path}/notifications">[[notifications:see_all]]</a></p>
+		</section>
+		<!-- ENDIF config.loggedIn -->
 	</nav>
 	<nav id="chats-menu" class="slideout-menu hidden">
-		<!-- IMPORT partials/chats-menu.tpl -->
+		<!-- IF config.loggedIn -->
+		<section class="menu-section" data-section="chats">
+			<h3 class="menu-section-title">
+				[[global:header.chats]]
+				<i class="counter unread-count" component="chat/icon" data-content="{unreadCount.chat}"></i>
+			</h3>
+			<ul class="menu-section-list chat-list" component="chat/list">
+				<a class="navigation-link" href="{relative_path}/user/{user.userslug}/chats">[[modules:chat.see_all]]</a>
+			</ul>
+		</section>
+		<!-- ENDIF config.loggedIn -->
 	</nav>
 
 	<main id="panel" class="slideout-panel">
@@ -45,3 +94,4 @@
 		</nav>
 		<div class="container" id="content">
 		<!-- IMPORT partials/noscript/warning.tpl -->
+
