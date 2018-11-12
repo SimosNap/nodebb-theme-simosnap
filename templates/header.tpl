@@ -27,13 +27,33 @@
 <body class="{bodyClass} skin-{config.bootswatchSkin}">
     <div id="sn_header">
         <div id="full_ads">
+            <style>
+                .adsresponsive { min-width:728px; max-width: 1280px; width:100%; height:90px; display:block; margin:0 auto;}
+                @media (max-width: 1340px) {
+                    .adsresponsive { min-width:728px; max-width: 1000px; width:100%; height:90px; display:block;}
+                }
+                @media (max-width: 1000px) {
+                    .adsresponsive { min-width:728px; max-width: 1000px; width:100%; height:90px; display:block;}
+                }
+                @media (max-width: 767px) {
+                    .adsresponsive { min-width:728px; max-width: 767px; width:100%; min-height:60px;max-height:90px; display:block;}
+                }
+                @media screen and (max-width: 640px) {
+                    .adsresponsive { min-width:468px; max-width: 640px; width:100%; height:60px; display:block;}
+                }
+                @media (max-width: 620px) {
+                    .adsresponsive { min-width:468px; max-width: 620px; width:100%; height:60px; display:block;}
+                }
+                
+                @media (max-width: 620px) {
+                    .adsresponsive { display:none;}
+                }    
+            </style>
     		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     		<!-- SimosNap Header Responsive -->
-    		<ins class="adsbygoogle"
-    		     style="display:block"
+    		<ins class="adsbygoogle adsresponsive"
     		     data-ad-client="ca-pub-0565181608763167"
-    		     data-ad-slot="7023610252"
-    		     data-ad-format="auto"></ins>
+    		     data-ad-slot="7023610252"></ins>
     		<script>
     		(adsbygoogle = window.adsbygoogle || []).push({});
     		</script>
