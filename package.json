@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-SimosNap",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "SimosNap IRC Network",
   "main": "theme.less",
   "keywords": [
@@ -18,5 +18,8 @@
     "bugs": {
         "url": "https://github.com/simosnap/nodebb-theme-simosnap/issues"
     },
-  "license": "MIT"
+  "license": "MIT",
+  "nbbpm": {
+    "compatibility": "^1.10.0"
+  }
 }

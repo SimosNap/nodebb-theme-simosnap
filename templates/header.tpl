@@ -25,10 +25,20 @@
 </head>
 
 <body class="{bodyClass} skin-{config.bootswatchSkin}">
+    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&appId=107629122613810&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
     <div id="sn_header">
         <div id="full_ads">
             <style>
-                .adsresponsive { min-width:728px; max-width: 1280px; width:100%; height:90px; display:block; margin:0 auto;}
+                .adsresponsive { min-width:728px; max-width: 1200px; width:100%; height:90px; display:block; margin:0 auto;}
                 @media (max-width: 1340px) {
                     .adsresponsive { min-width:728px; max-width: 1000px; width:100%; height:90px; display:block;}
                 }
