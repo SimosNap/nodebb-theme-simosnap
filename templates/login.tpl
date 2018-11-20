@@ -1,6 +1,7 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
-
+<div widget-area="login"></div>
 <div class="row">
+    
 	<!-- IF allowLocalLogin -->
 	<div class="<!-- IF alternate_logins -->col-md-6<!-- ELSE -->col-md-12<!-- ENDIF alternate_logins -->">
 		<div class="login-block">
