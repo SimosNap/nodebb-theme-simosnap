@@ -2,10 +2,13 @@
 	"id": "nodebb-theme-simosnap",
 	"library": "./lib/theme.js",
 	"hooks": [
-		{
-			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas",
-			 "hook": "filter:meta.getLinkTags", "method": "getLinkTags"
-		}
+		{ "hook": "filter:teasers.get", "method": "getTeasers" },
+		{ "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
+		{ "hook": "filter:config.get", "method": "getThemeConfig" },
+		{ "hook": "static:app.load", "method": "init" },
+		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
+		{ "hook": "filter:topic.build", "method": "addUserToTopic" },
+		{ "hook": "filter:meta.getLinkTags", "method": "getLinkTags"}
 	],
 	"scripts": [
 		"lib/client.js",
@@ -15,5 +18,9 @@
 	],
 	"modules": {
 		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
-	}
+	},
+	"acpScripts": [
+		"lib/admin.js"
+	],
+	"languages": "languages"
 }
