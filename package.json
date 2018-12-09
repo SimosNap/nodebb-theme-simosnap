@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-simosnap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SimosNap IRC Network",
   "main": "theme.less",
   "keywords": [
