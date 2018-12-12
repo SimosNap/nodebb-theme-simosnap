@@ -11,6 +11,11 @@
 				<p>{error}</p>
 			</div>
 
+			<div class="alert alert-info">
+				<strong>Accedi al forum utilizzando il tuo account IRC</strong>
+				<p></p>
+			</div>
+
 			<form class="form-horizontal" role="form" method="post" id="login-form">
 				<div class="form-group">
 					<label for="username" class="col-lg-2 control-label">{allowLoginWith}</label>
